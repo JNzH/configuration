@@ -5,10 +5,10 @@
     "code-runner.executorMap": {
 
         "javascript": "node",
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc $fileName -o $dir\\build\\$fileNameWithoutExt && $dir\\build\\$fileNameWithoutExt",
-        "cpp": "cd $dir && g++ \"$fileName\" -o \"$dir/build/$fileNameWithoutExt\" && \"$dir/build/$fileNameWithoutExt\"",
-        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "java": "javac $fileName && java $fileNameWithoutExt",
+        "c": "gcc \"$fileName\" -o .\\build\\$fileNameWithoutExt && .\\build\\$fileNameWithoutExt",
+        "cpp": "g++ \"$fileName\" -o \"./build/$fileNameWithoutExt\" && \"./build/$fileNameWithoutExt\"",
+        "objective-c": "gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
         "php": "php",
         "python": "python -u",
         "perl": "perl",
@@ -58,4 +58,6 @@
     "code-runner.runInTerminal": true,
     "code-runner.saveFileBeforeRun": true,
     "code-runner.preserveFocus": false,
+    // cd to current directory to shorten the code-runner command
+    "code-runner.fileDirectoryAsCwd": true,
 }
