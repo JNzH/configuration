@@ -1,0 +1,88 @@
+{
+	// Place your snippets for cpp here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"poj":{
+		"prefix": "poj",
+		"body": [
+			"#include <iostream>",
+			"#include <cstdio>",
+			"#include <iostream>",
+			"#include <cstdio>",
+			"#include <algorithm>",
+			"#include <cstring>",
+			"#include <string>",
+			"#include <vector>",
+			"#include <stack>",
+			"#include <cmath>",
+			"#include <ctime>",
+			"#include <cstdlib>",
+			"#include <map>",
+			"#include <set>",
+			"#include <list>",
+			"#include <queue>",
+			"",
+			"#define debug(...)  fprintf(stderr,__VA_ARGS__)",
+			"#define DEBUG printf(\"Passing [%s] in LINE %d\\n\",__FUNCTION__,__LINE__)",
+			"#define Debug debug(\"Passing [%s] in LINE %d\\n\",__FUNCTION__,__LINE__)",
+			"#define rep(i,x,y) for(int i=(x);i<=(y);++i)",
+			"",
+			"using namespace std;",
+			"typedef long long ll;",
+			"typedef unsigned long long ull;",
+			"typedef pair<int,int> pii;",
+			"typedef pair<ll,int> pli;",
+			"typedef pair<int,ll> pil;",
+			"typedef pair<ll,ll> pll;",
+			"",
+			"const ll MOD=1e9+7;",
+			"",
+			"ll qpow(ll a,ll b){ll ret=1;for(;b;b>>=1) if(b&1) ret=ret*a%MOD,a=a*a%MOD;return ret;}",
+			"\n",
+			"int main(){",
+			"\t\\\\freopen(\"data.in\",\"r\",stdin)",
+			"\t$1",
+			"\treturn 0;",
+			"}",
+		]
+	},
+	"bits":{
+		"prefix": "bits",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"",
+			"#define debug(...)  fprintf(stderr,__VA_ARGS__)",
+			"#define DEBUG printf(\"Passing [%s] in LINE %d\\n\",__FUNCTION__,__LINE__)",
+			"#define Debug debug(\"Passing [%s] in LINE %d\\n\",__FUNCTION__,__LINE__)",
+			"#define rep(i,x,y) for(int i=(x);i<=(y);++i)",
+			"",
+			"using namespace std;",
+			"typedef long long ll;",
+			"typedef unsigned long long ull;",
+			"typedef pair<int,int> pii;",
+			"typedef pair<ll,int> pli;",
+			"typedef pair<int,ll> pil;",
+			"typedef pair<ll,ll> pll;",
+			"",
+			"const ll MOD=1e9+7;",
+			"",
+			"ll qpow(ll a,ll b){ll ret=1;for(;b;b>>=1) if(b&1) ret=ret*a%MOD,a=a*a%MOD;return ret;}",
+			"\n",
+			"int main(){",
+			"\t\\\\freopen(\"data.in\",\"r\",stdin)",
+			"\t$1",
+			"\treturn 0;",
+			"}",
+		]
+	},
+}
